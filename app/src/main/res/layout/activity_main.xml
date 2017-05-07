@@ -7,15 +7,28 @@
     tools:context="com.example.fabiansuarez.palabras.MainActivity">
 
     <RelativeLayout
-        android:layout_width="389dp"
-        android:layout_height="522dp">
+        android:layout_width="381dp"
+        android:layout_height="509dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1dp">
 
-        <Button
+        <TextView
+            android:id="@+id/tit10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Inicio"
+            android:layout_centerHorizontal="true"
+            android:text="Iniciar"
+            android:textSize="18sp" />
+
+        <ImageButton
             android:id="@+id/Inicio"
-            android:layout_width="134dp"
-            android:layout_height="48dp"
-            android:layout_centerInParent="true"
-            android:text="Iniciar" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
